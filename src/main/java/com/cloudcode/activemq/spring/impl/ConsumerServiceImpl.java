@@ -2,8 +2,10 @@ package com.cloudcode.activemq.spring.impl;
 
 import javax.jms.JMSException;
 
-import com.cloudcode.activemq.spring.ConsumerService;
+import org.springframework.stereotype.Component;
 
+import com.cloudcode.activemq.spring.ConsumerService;
+@Component
 public class ConsumerServiceImpl implements ConsumerService {
 
 	public void receiveMessage(String message) throws JMSException {
